@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Using CSV</title>
+    <script src="/scripts/d3.min.js"></script>
+    <style>
+      body {color: #DEDEFF;}
+      .axis path,
+      .axis line {
+        stroke: #DEDEFF;
+        shape-rendering: crispEdges;
+        fill: none;
+      }
+      .axis text {
+        fill: #DEDEFF;
+      }
+      path {
+        stroke: #F58642;
+      }
+      .curve {
+        stroke-width: 2px;
+      }
+      
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="graph" style="position:absolute;left:50;top:30; float:left;"></div>
+
+    <script>
+      
+      var m = 70;
+      var width = 500 - m - m,
+          height = 500 - m - m;
+
+
+      if(window.frameElement) {
+        width = window.frameElement.offsetWidth;
+        window.frameElement.setAttribute('style', 'height: ' + (height + m + m) + 'px !important');
+      }
+
+      width = width -m -m;
+
+      var dataset = [height * Math.random()];
+      for (var i = 1; i < 20; i++) {
+        var newNumber = height * (-0.5 + Math.random()) + dataset[i-1];
+        dataset.push(newNumber);
+      }
+
+      var x=d3.scale.linear().domain([1, dataset.length]).range([0,width]);
+      var y=d3.scale.linear().domain([d3.min(dataset), d3.max(dataset)]).range([height,0]);
+
+      var line = d3.svg.line()
+        .x(function(d,i){return x(i);})
+        .y(function(d){return y(d);})
+        .interpolate("basis");
+
+      var graph = d3.select("body").append("svg:svg")
+        .attr("width", width + m + m)
+        .attr("height", height + m + m);
+
+      var xAxis = d3.svg.axis().scale(x).orient("bottom");
+      var yAxis = d3.svg.axis().scale(y).orient("left");
+      graph.append("svg:g")
+        .attr("class", "axis")
+        .attr("transform", "translate(" + m + "," + (height - 0) + ")")
+        .call(xAxis);
+
+      graph.append("svg:g")
+        .attr("class", "axis")
+        .attr("transform", "translate(" + m + "," + 0 + ")")
+        .call(yAxis);
+
+      graph.append("svg:path").attr("class", "curve").attr("d", line(dataset)).attr("transform", "translate(" + (1.29*m) + ",0)").attr("fill","none");
+
+    </script>
+  </body>
+</html>

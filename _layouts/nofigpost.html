@@ -1,0 +1,25 @@
+---
+layout: nofigs
+---
+
+<article class="article">
+  <header class="article_header">
+    <a href="/">{{ page.title }}</a>
+    <!--<span id="right_date"><time datetime="{{ page.date | date: '%Y-%M-%d' }}">{{page.date | date: "%b %Y" }}</time></span>-->
+  </header>
+  <div class="article_separator"></div>
+
+  {{ content }}
+
+  <footer class="article_footer"> 
+    <p>
+    {% if page.reviewers %}
+    <em>Intended:
+      <span id="reviewers">
+        {{ page.reviewers | array_to_sentence_string }}
+      </span>
+      </em>
+    {% endif %}
+    </p>
+  </footer> 
+</article>

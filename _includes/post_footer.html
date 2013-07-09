@@ -1,0 +1,18 @@
+<footer class="article_footer"> 
+  <p>
+    Review:
+    <span id="reviewers">
+      {% for r in post.reviewers %}
+        {{r}}
+        {% if forloop.rindex0 == 1 %} 
+          and 
+        {% else %}
+          {% if forloop.rindex0 != 0 %}
+            ,
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </span>
+  </p>
+</footer> 
+

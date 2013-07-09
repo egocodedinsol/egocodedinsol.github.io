@@ -1,0 +1,18 @@
+
+#figMenu ul {
+  visibility: hidden;
+  position: fixed;
+  float: right;
+  right: 5%;
+  top: 33%;
+  list-style-type: none;
+}
+#figMenu li:hover {
+  cursor: pointer;
+  color: #F58642;
+}
+#figMenu li:active {
+  color: #DEDEFF;
+}
+
+

@@ -1,0 +1,8 @@
+*.ai
+*.sh
+WTFabout.md
+_site/*
+deprecated/*
+*.swp
+
+

@@ -1,0 +1,26 @@
+#content_section {
+  width: 95%;
+  max-width: 23em;
+  text-align: justify;
+  word-spacing: -0.17em;
+  margin: 0 auto;
+  margin-top: 9em;
+  margin-bottom: 9em;
+  opacity: 0.7;
+}
+.footnotes hr {
+  border: 0;
+  background: #DEDEFF;
+  height: 1px;
+  opacity: 0.4;
+}
+.footnotes ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+/*#content_section .article_header {
+  text-align: left;
+  font-size: 1em;
+  opacity: 0.5;
+  margin-bottom: -1.2em;
+}*/

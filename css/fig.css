@@ -1,0 +1,147 @@
+span.figure {
+  color: #F58642;
+  cursor: pointer;
+}
+
+ul.figControls {
+  list-style-type: none;
+  color: #DEDEFF;
+  opacity: 0.67;
+  font-size: 0.7em;
+  float:right;
+
+}
+ul.figControls li {
+  display: inline;
+}
+.figControls li:hover {
+  color: #F58642;
+  cursor: pointer;
+}
+ul.figControls li:active {
+  color: #DEDEFF;
+} 
+.figControls a {
+  border-bottom: none;
+}
+
+.textLink {
+  font-size: 1em;
+}
+.textLink:hover {
+  color: #F58642;
+  cursor: pointer;
+}
+.textLink:active {
+  color: #DEDEFF;
+}
+
+.resetLink {
+}
+.resetLink:hover {
+  color: #F58642;
+  cursor: pointer;
+}
+.resetLink:active {
+  color: #DEDEFF;
+}
+
+.xlabel {
+  text-align: center;
+  left: 33%;
+  right: 33%;
+  bottom: 3%;
+  position: absolute;
+  opacity: 0.75;
+}
+.ylabel {
+  text-align: center;
+  position: absolute;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  top: 50%;
+  left: -3em;
+  opacity: 0.75;
+}
+.figtitle {
+  text-align: center;
+  margin-top: 2em;
+  opacity: 0.75;
+}
+
+#figure_column {
+  top: 18.5em;
+  margin-bottom: 9em;
+  background-color: transparent;
+  position: absolute;
+  left: 37em; 51%; 54%; 1%; 1.7in;
+  /*float: left;left;*/
+  /width: 38.5%;
+  /*max-width: 7in;*/
+  margin-left: 0em;12.5%;
+  padding-left: 0em;
+}
+
+
+#figure_column iframe {
+  width: 100%;
+  border: 0px;
+}
+
+.drag_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.figure_container {
+  margin-top: 2.5em;
+  margin-bottom: 5em;
+  margin-right: 3em;
+  margin-left: 0em;
+  padding: 1em;
+  box-shadow: 0px 1px 2px 1px #172133;
+  background: #293A59; 
+  position:relative;
+  cursor: move;
+  list-style-type:none;
+  width: 35em;
+  max-width: 100%;80%;
+  min-width: 14em;
+  min-height: 14em;
+  float: left;
+}
+.figure_container img {
+  width: 90%;
+  margin: 5%;
+  position: relative;
+}
+
+#figure_iframe {
+  background-color: transparent;
+  position: absolute;
+  right: 1in;
+  float: right;
+  top: 115px;
+  width: 4.75in;
+}
+
+.figure_header {
+  float: left;
+  opacity:0.67;
+}
+.figure_header h2 {
+  line-height: 1.0; 
+  font-weight: lighter;  
+  color: #DEDEFF;
+  margin-right: 0em;
+  margin-top: 0em;
+  margin-bottom: 0.5em; 
+}
+.figure_header a:hover {
+  color: #F58642;
+}
+.figure_header a:active {
+  color: #DEDEFF;
+}
+
+

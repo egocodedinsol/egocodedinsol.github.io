@@ -1,0 +1,17 @@
+---
+layout: archive
+title: ego, coded in sol
+---
+
+<ul id="archive_list">
+  <a href="/about/">
+    <span class="archive_date">1706</span>about
+  </a>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        <span class="archive_date">{{ post.date | date: "%Y" }}</span>{{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

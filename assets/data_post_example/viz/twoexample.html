@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="http://backbonejs.org/backbone-min.js"></script>
+    <script src="https://raw.github.com/jonobr1/two.js/master/build/two.js"></script>
+  </head>
+  <body>
+    <div id="draw-shapes"><p>woot</p></div>
+    <script>
+      var elem = document.getElementById('draw-shapes');
+
+      var params = { width: 285, height: 200};
+      var two = new Two(params).appendTo(elem);
+
+      var circle = two.makeCircle(-70, 0, 50);
+      var rect = two.makeRectangle(70,0,100,100);
+
+      circle.fill = '#DEDEFF';
+      circle.stroke = '#DEDEFF';
+      circle.opacity = 0.8;
+      circle.linewidth = 5;
+
+      rect.fill = '#F58642';
+      rect.opacity = 0.8;
+      rect.noStroke();
+
+
+      var group = two.makeGroup( circle, rect );
+      group.translation.set( two.width / 2, two.height / 2 );
+      group.rotation = Math.PI;
+      group.scale = 0.0;
+      group.noStroke();
+
+			two.bind('update', function( frameCount ) {
+        if (group.scale > 0.9999) {
+          group.scale = group.rotation = 0;
+        }
+        var t = (1 - group.scale) * 0.125;
+        group.scale += t;
+        group.rotation += t * 4 * Math.PI;
+      }).play();
+							
+
+
+      two.update();
+
+    </script>
+  </body>
+</html>

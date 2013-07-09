@@ -1,0 +1,16 @@
+<footer class="article_footer"> 
+  <p>
+    Review:
+    {% for r in page.reviewers %}
+      <span id="reviewers">{{r}}</span>
+      {% if forloop.rindex0 == 1 %} 
+        and 
+      {% else %}
+        {% if forloop.rindex0 != 0 %}
+          ,
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </p>
+</footer> 
+

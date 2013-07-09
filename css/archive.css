@@ -1,0 +1,36 @@
+ul#archive_list {
+  list-style-position: outside; 
+  text-transform:lowercase;
+  list-style-type: none; 
+  padding: 0em;
+  left: 33%;
+  width: 30em;
+  border-bottom: none !important;
+  position: relative;
+  margin-top: 20%;
+  opacity: 0.7;
+  margin-bottom: 20%;
+}
+ul#archive_list a {
+  border-bottom: none;
+}
+ul#archive_list a:hover {
+  color: #F58642;
+  border-bottom: none;
+}
+ul#archive_list a:active {
+  color: #DEDEFF;
+  border-bottom: none;
+}
+
+span.archive_date {
+  float: right;
+  text-align: right;
+  text-transform:capitalize;
+  opacity: 0.45;
+  margin-right: 1em;
+  right: 99.8%;
+  position: relative;
+}
+
+

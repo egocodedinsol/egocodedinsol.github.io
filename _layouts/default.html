@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="kevinalexbrown" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/modules.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fig_post_text.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fig.css" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <link rel="icon" type="image/png" href="/favicon.png"></link>
+    <script type="text/javascript"
+        src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script> 
+    <script>
+        $(function() {
+          $( ".drag_wrapper").each( function () {this.dataset.left = $(this).position().left;
+                                                 this.dataset.top =  $(this).position().top;
+                                    });
+          $( ".drag_wrapper" ).each( function () {this.dataset.width = $(this).width();
+                                                      this.dataset.height = $(this).height();
+                                         });
+          $( ".drag_wrapper" ).draggable( {scroll: true, stack: ".drag_wrapper"} );
+
+          $( ".figure_container" ).each( function () {this.dataset.width = $(this).width();
+                                                      this.dataset.height = $(this).height();
+                                         });
+          $( ".figure_container" ).resizable({aspectRatio: true});
+        });
+    </script>
+    <script src="/scripts/figureMover.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41318157-1', 'egocodedinsol.github.io');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+    <div id="text_section_wrapper">
+    <section id="text_section">
+      {{ content }}
+      <div class="article_separator"></div>
+      <div id="about_section">
+        <nav>
+          <ul id="links">
+            <li><a style="text-align:center;" href="/">home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    </div>
+    
+    <div id = "figure_column_wrapper">
+    <ul id="figure_column">
+      {% for f in page.figures %}
+        <div class="drag_wrapper">
+          <li class="figure_container">
+            {% unless page.no_number %}
+              <header class="figure_header">
+                <h2>
+                  <span class="textLink" data-nrefs=0 data-clicks=0 data-n="{{forloop.index}}">
+                    #{{ forloop.index }}
+                  </span>
+              </header>
+                </h2>
+                <ul class="figControls">
+                  <li class="textLink" data-nrefs=0 data-clicks=0 data-n="{{forloop.index}}">
+                    text
+                  </li> |  
+            <!--      <li class="fix" data-clicks=0 data-="{{forloop.index}}">
+                    fix
+                  </li> | -->
+                  <li class="resetLink">reset</li> |
+                    {% case f.type %}
+                      {% when 'img' %}
+                        <li><a href = "/assets/{{page.id}}/images/{{f.ref}}">link</a></li>
+                      {% when 'viz' %}
+                        <li><a href = "/assets/{{page.id}}/viz/{{f.ref}}">link</a></li>
+                    {% endcase %}
+                  </li>
+                </ul>
+            {% endunless %}
+            {% if f.xlabel %}
+              <div class="xlabel"> {{ f.xlabel }} </div>
+            {% endif %}
+            {% if f.ylabel %}
+              <div class="ylabel"> {{ f.ylabel }} </div>
+            {% endif %}
+            {% if f.figtitle %}
+              <div class="figtitle"> {{ f.figtitle }} </div>
+            {% endif %}
+            {% case f.type %}
+              {% when 'img' %}
+                <img id="fig_{{forloop.index}}" src="/assets{{page.id}}/images/{{f.ref}}"/>
+              {% when 'viz' %}
+                <iframe scrolling="no" style="width:100%;" src="/assets{{page.id}}/viz/{{f.ref}}"></iframe>
+                <noscript>This figure uses javascript</noscript>
+              {% when 'script' %}
+                <script type="text/javascript" src="/assets{{page.id}}/scripts/{{f.fref}}"></script>
+            {% endcase %}
+
+              
+          </li>
+        </div>
+      {% endfor %}
+    </ul>
+    </div>
+  <!-- 
+    {% unless page.no_number %} 
+      <div id="figMenu">
+        <ul>
+          {% for f in page.figures %}
+            <li class = "figure" data-n="{{forloop.index}}">{{forloop.index}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endunless %}
+
+   -->
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <canvas>
+            <script src="/scripts/d3.min.js"></script>
+            <script src="/assest{page.id}}/viz/{{v}}"></script>
+          </canvas> -->
+
+
+
+<!--<object type="image/svg+xml" data="/assets/images{{page.id}}/{{f}}"></object> -->
+
+
+
+
+
+
+<!--    <img id="footer" src="/assets/images/logos/Manifold-06.png"/>
+<img id="footer" src="/assets/images/logos/ThickCarpetLineBox-04.png"/>-->
+    <!-- <img id="logo" src="/assets/images/SiteLogoTop3-01.png"/>-->
+    <!--<img id="logo" src="/assets/images/SiteLogoTop3WithAxes-01.png"/>-->
+<!--    <img id="logo" src="/assets/images/logos/BoxWithCarpetRide-01.png"/> 
+    <img id="logo" src="/assets/images/logos/MagicCarpetRide-01.png"/>
+    <img id="logo" src="/assets/images/logos/SlightlyWavierCarpetRide-03.png"/>
+    <img id="logo" src="/assets/images/logos/WavierCarpetRide-03.png"/>
+    <img id="logo" src="/assets/images/logos/CarpetBox-09.png"/>
+    -->
+
+
+    <!--<img id="header" src="/assets/images/logos/ThickCarpetLineBox-04.png"/>-->
+
+           <!--   <span class="textLink" data-nrefs=0 data-clicks=0 data-n="{{forloop.index}}">
+                 text
+href="/assets{{page.id}}/images/{{f}}"
+              </span>-->
+<!--
+    //    var ref;
+    //    var idx = 0;
+    //    alert(refNum);
+    //    $(".figure").each( function() {
+    //      if (this.dataset.n == figNum ){
+    //        if (idx == refNum)
+    //          ref = this; //alert(this); //return this;
+    //        else {
+    //          idx++;
+    //        }
+    //          
+    //      }
+    //    });
+
+
+        //  alert("figure " + figNum + "ref has been clicked " + 
+        //        this.dataset.clicks + " times and there are " + 
+        //       this.dataset.nrefs + " references to it in the text" + 
+        //       "giving a refnum of "+ parseInt(this.dataset.clicks) % parseInt(this.dataset.nrefs) );
+
+-->
+
+
+
+            <!-- <li><a style="text-align:center;" href="/current">current</a></li> -->
+        <!--    <li><a style="text-align:right;" href="/about">about</a></li> -->
+
+
+
+
+
+<!--
+      {% for v in page.viz %}
+        <div class="figure_container">
+          <header class="figure_header">
+            <h2><a href="/assets{{page.id}}/viz/{{v}}"># {{ forloop.index }}</a></h2>
+          </header>
+          <iframe scrolling="no" style="width:100%;" src="/assets{{page.id}}/viz/{{v}}"></iframe>
+          <noscript>This figure uses javascript</noscript>
+        </div>
+      {% endfor %}
+-->
+

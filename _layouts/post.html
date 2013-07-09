@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<article class="article">
+  <header class="article_header">
+    <a href="/">{{ page.title }}</a>
+  </header>
+  <div class="article_separator"></div>
+
+  {{ content }}
+
+  <footer class="article_footer"> 
+    <p>
+    {% if page.reviewers %}
+    <em>Review:
+      <span id="reviewers">
+        {{ page.reviewers | array_to_sentence_string }}
+      </span>
+      </em>
+    {% endif %}
+    </p>
+  </footer> 
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="about_section">
+      <nav>
+        <ul id="links">
+          <li><a style="text-align:left;" href="/archive">archive</a></li>
+          <li><a style="text-align:center;" href="/current">current</a></li>
+          <li><a style="text-align:right;" href="/about">about</a></li>
+        </ul>
+      </nav>
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+        {% for r in page.reviewers %}
+          {{r}}
+          {% if forloop.rindex0 == 1 %} 
+            and 
+          {% else %}
+            {% if forloop.rindex0 != 0 %}
+              ,
+            {% endif %}
+          {% endif %}
+          {% endfor %} 
+          -->

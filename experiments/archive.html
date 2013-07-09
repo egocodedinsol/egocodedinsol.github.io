@@ -1,0 +1,18 @@
+---
+layout: simple
+title: Archive
+permalink: /archive/
+---
+
+<ul id="archive_list">
+  <a href="/about9/">about
+    <span class="archive_date">Jan 1706</span>
+  </a>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}
+        <span class="archive_date">{{ post.date | date: "%b %Y" }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
