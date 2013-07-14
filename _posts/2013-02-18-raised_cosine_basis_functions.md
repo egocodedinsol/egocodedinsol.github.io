@@ -22,6 +22,18 @@ figures:
 published: true
 --- 
 
+<em>This was a post I wrote for members of my lab, as we were trying to find
+out why a particular set of functions was chosen. The particulars aren't
+important, but I thought the interface was nice. Play around a bit. The changes
+are really simple, but solve what is oddly my biggest frustration in reading
+papers: jumping from figure refs to figures themselves and back again, with
+repetitive captions. We optimized papers for print (and did a great job), but
+we really haven't changed now that we have this new medium. This was hacked
+together with some jquery and jekyll and mathjax; someone who codes js for a
+living might do better with knockout or tangle. Incidentally, if scientific
+journals helped me do more than I can accomplish in LaTeX, I'd be more
+sympathetic to their dominance. So: click on things that look clickable, tell me what you think. </em>
+
 Papers
 ======
 
@@ -37,7 +49,7 @@ supp](http://www.cns.nyu.edu/pub/lcv/pillow08-SuppMaterials-reprint.pdf)
 
 [Neuron modeling paper](http://www.cns.nyu.edu/csh/csh04/Articles/KeatEtAl2001.pdf)
 
-The thing to remember is that the number one thing we're probably interested in
+The number one thing we're probably interested in
 for spike-history basis functions is a basis which describes the spike-triggered
 psth with as few basis functions as possible. Time dilation and using a raised
 cosine have certain advantages in this regard, and we'll discuss them below.
@@ -257,7 +269,7 @@ $$ x = a\log( t + b)\pi - \varphi_i$$
 and space the \\(\varphi_i\\) in a reasonable manner (like \\(\pi/2\\) in the
 Pillow 2008 paper. 
 
- 
+<!-- 
 Understanding Konrad's Code
 ===========================
 
@@ -295,8 +307,7 @@ from the center c as the distance between the centers dc, we get \\(\pm \pi
 musings above, but it still works as long as you have even intervals of the
 distance between centers. The only difference is that you'll sum to two instead
 of 1, because you'll have 4 overlapped raised cosine functions instead of two. 
-
-
+-->
 
 
 
