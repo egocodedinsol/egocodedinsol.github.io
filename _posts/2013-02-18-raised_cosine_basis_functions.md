@@ -34,6 +34,8 @@ living might do better with knockout or tangle. Incidentally, if scientific
 journals helped me do more than I can accomplish in LaTeX, I'd be more
 sympathetic to their dominance. So: click on things that look clickable, tell me what you think. </em>
 
+<em>It sounds really simple, but the ability to view a figure without losing context helps me immeasurably.</em>
+
 Papers
 ======
 
