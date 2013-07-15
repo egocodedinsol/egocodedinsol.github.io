@@ -13,7 +13,7 @@ a.no_underline {
 .article_header {
   font-weight: lighter;
   text-align: center;
-  color: #DEDEFF;
+  color: rgb(21,21,29);
   opacity: 0.65;
   font-size: 2em;
   margin-bottom: -0.2em;
@@ -29,14 +29,14 @@ a.no_underline {
 }
 
 .article_separator { 
-  background-color: #dedeff; 
+  background-color: rgb(21,21,29); 
   border-style: none; 
   height: 1px; 
   width: 100%;
   text-align: left; 
   margin-top: 2em;
   margin-bottom: 2em;  
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 span#reviewers {
@@ -84,7 +84,7 @@ span#lambda {
   font-weight: lighter !important;
 } 
 #about_section a { 
-  color: #DEDEFF;
+  color: rgb(21,21,29);
   font-weight: lighter !important;
   border-bottom: none !important;
 } 
@@ -111,7 +111,7 @@ ul#links a:hover {
   color: #F58642;
 }
 ul#links a:active {
-  color: #DEDEFF;
+  color: rgb(21,21,29); #DEDEFF;
 }
 ul#links li {
   display:table-cell;

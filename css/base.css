@@ -6,8 +6,8 @@ body {
   font-family: "Helvetica", "Georgia", "Arial"; 
   font-weight: lighter;
   line-height: 1.4;
-  background: #304469;
-  color: #DEDEFF; 
+  background: rgb(255,255,255);
+  color: rgb(21,21,29); rgb(61, 61, 61); 
 }
 @-moz-document url-prefix() {
   body {
@@ -18,15 +18,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(222, 222, 255, 0.4);
+  border-bottom: 1px solid rgba(21,21,29, 0.4);
 }
 a:hover {
   color: #F58642;
   border-bottom: 1px solid #F58642;
 }
 a:active {
-  color: #DEDEFF;
-  border-bottom: 1px solid #DEDEFF;
+  color: rgb(21,21,29);
+  border-bottom: 1px solid rgb(21,21,29);
 }
 a:focus {
   outline: none;
@@ -50,7 +50,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
   font-size: 1.3em;
   opacity: 0.78;
-  color: #DEDEFF; #F58642;
+  color: rgb(21,21,29); rgb(61,61,61); #DEDEFF; #F58642;
 } 
 h2 {
   font-size: 1.2em;
@@ -60,7 +60,7 @@ h3 {
 }
 
 code {
-  font-size: .9em;
+  font-size: 1em;
 }
 
 

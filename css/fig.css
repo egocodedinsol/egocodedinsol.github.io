@@ -6,7 +6,7 @@ span.figure {
 ul.figControls {
   list-style-type: none;
   color: #DEDEFF;
-  opacity: 0.67;
+  opacity: 0.8;
   font-size: 0.7em;
   float:right;
 
@@ -75,9 +75,6 @@ ul.figControls li:active {
   background-color: transparent;
   position: absolute;
   left: 37em; 51%; 54%; 1%; 1.7in;
-  /*float: left;left;*/
-  /width: 38.5%;
-  /*max-width: 7in;*/
   margin-left: 0em;12.5%;
   padding-left: 0em;
 }
@@ -100,7 +97,7 @@ ul.figControls li:active {
   margin-left: 0em;
   padding: 1em;
   box-shadow: 0px 1px 2px 1px #172133;
-  background: #293A59; 
+  background: rgb(22,22,29); #293A59; 
   position:relative;
   cursor: move;
   list-style-type:none;
@@ -138,7 +135,7 @@ ul.figControls li:active {
   margin-bottom: 0.5em; 
 }
 .figure_header a:hover {
-  color: #F58642;
+  color: rgb(255,255,255);
 }
 .figure_header a:active {
   color: #DEDEFF;
