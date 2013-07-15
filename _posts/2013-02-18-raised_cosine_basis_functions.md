@@ -22,6 +22,8 @@ figures:
 published: true
 --- 
 
+To use: click the figure number, 'text', 'reset', the resize on the figure, or the figure link in the text.
+
 <em>This was a post I wrote for members of my lab, as we were trying to find
 out why a particular set of functions was chosen. The particulars aren't
 important, but I thought the interface was nice. Play around a bit. The changes
