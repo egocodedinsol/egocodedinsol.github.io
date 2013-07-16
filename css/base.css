@@ -7,7 +7,7 @@ body {
   font-weight: lighter;
   line-height: 1.4;
   background: rgb(255,255,255);
-  color: rgb(21,21,29); rgb(61, 61, 61); 
+  color: rgb(21,21,29); 
 }
 @-moz-document url-prefix() {
   body {
@@ -50,7 +50,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
   font-size: 1.3em;
   opacity: 0.78;
-  color: rgb(21,21,29); rgb(61,61,61); #DEDEFF; #F58642;
+  color: rgb(21,21,29); 
 } 
 h2 {
   font-size: 1.2em;
