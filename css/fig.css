@@ -53,6 +53,7 @@ ul.figControls li:active {
   bottom: 3%;
   position: absolute;
   opacity: 0.75;
+  color: #DEDEFF;
 }
 .ylabel {
   text-align: center;
@@ -62,11 +63,13 @@ ul.figControls li:active {
   top: 50%;
   left: -3em;
   opacity: 0.75;
+  color: #DEDEFF;
 }
 .figtitle {
   text-align: center;
   margin-top: 2em;
   opacity: 0.75;
+  color: #DEDEFF;
 }
 
 #figure_column {
@@ -97,7 +100,7 @@ ul.figControls li:active {
   margin-left: 0em;
   padding: 1em;
   box-shadow: 0px 1px 2px 1px #172133;
-  background: rgb(22,22,29); #293A59; 
+  background: #394A69; #293A59; 
   position:relative;
   cursor: move;
   list-style-type:none;

@@ -2,12 +2,12 @@
 #text_section {
   background:  transparent;
   padding-top: 3.3em;
-  width: 21em;
-  max-width: 22em;
+  width: 25em;
+  max-width: 25em;
   min-width: 2.5in;
   position: relative;  
-  text-align: left;
-  left: 9.5em;;
+  text-align: justify;
+  left: 5.5em;;
   letter-spacing: normal;
   float: left;
   margin-top: 9em;
