@@ -25,7 +25,7 @@ a.no_underline {
   color: #F58642 !important;
 }
 .article_header a:active {
-  color: #DEDEFF !important;
+  color: rgb(21,21,29) !important;
 }
 
 .article_separator { 
@@ -36,7 +36,7 @@ a.no_underline {
   text-align: left; 
   margin-top: 2em;
   margin-bottom: 2em;  
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 span#reviewers {
@@ -67,7 +67,7 @@ span#lambda {
 
 #about_header {
   margin-top: 0em;
-  font-size: 19pt;
+  font-size: 1.2em;
   text-align:right;
   font-weight: lighter;  
   color: #DEDEFF;
@@ -75,7 +75,7 @@ span#lambda {
 
 #about_section {
   width:100%;
-  font-size: 19pt; 
+  font-size: 1.2em; 
   left: 0px;
   position: relative;
   float: left; 

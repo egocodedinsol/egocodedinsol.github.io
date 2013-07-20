@@ -1,15 +1,14 @@
 #content_section {
   width: 95%;
   max-width: 23em;
-  text-align: justify;
-  word-spacing: -0.17em;
   margin: 0 auto;
-  margin-top: 9em;
-  margin-bottom: 9em;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  
 }
 .footnotes hr {
   border: 0;
-  background: #DEDEFF;
+  background: rgb(21,21,29);
   height: 1px;
   opacity: 0.4;
 }
