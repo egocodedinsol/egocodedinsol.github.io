@@ -4,7 +4,8 @@
   margin: 0 auto;
   margin-top: 20%;
   margin-bottom: 20%;
-  
+  font-family: Georgia;
+  opacity: 0.9;
 }
 .footnotes hr {
   border: 0;
@@ -16,9 +17,9 @@
   list-style-type: none;
   padding-left: 0;
 }
-/*#content_section .article_header {
+#content_section .article_header {
   text-align: left;
-  font-size: 1em;
+  font-size: 1.5em;
   opacity: 0.5;
-  margin-bottom: -1.2em;
-}*/
+  margin-bottom: -0.7em;
+}
