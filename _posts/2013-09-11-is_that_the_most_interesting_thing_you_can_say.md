@@ -85,7 +85,7 @@ but let's not talk about that; let's talk about your appreciation of fonts"?
 # I2: Calls to action
 
 Often these comments _do_ reflect the beliefs and knowledge of the community,
-buy are rarely novel. The most popular ones make a statement a substantial
+but are rarely novel. The most popular ones make a statement a substantial
 portion people in the world at large agree with, but often not all, so that those who
 agree feel a need to upvote, or nod, so that their perspective or point of view
 will gain more visibility, and ultimately, "win". They often omit reasoning, but
@@ -181,7 +181,7 @@ other comment will alter the way the world is organized, or how we understand it
 to be. Or they change the way I think or approach the world. 
 
 
-[^1] (1) [Some guy](https://news.ycombinator.com/item?id=4693920)
+[^1]: (1) [Some guy](https://news.ycombinator.com/item?id=4693920)
 
-[^2] (2) These are based on [another
+[^2]: (2) These are based on [another
 list](http://www.paulgraham.com/disagree.html) buy that guy
