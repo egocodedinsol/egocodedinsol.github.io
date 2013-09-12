@@ -4,9 +4,9 @@ title: Is That the Most Interesting Thing You Can Say?
 published: true
 ---
 
-I used to have the title[^1] taped above my desk in my lab office, to remind me that
+I used to have the title taped above my desk in my lab office, to remind me that
 not everything I think is interesting to others, and not everything that's true
-matters in every discussion. Of course, interestingness is not the most
+matters in every discussion[^1]. Of course, interestingness is not the most
 appropriate criterion for a comment in every situation (the hurricane is coming,
 but people, what would be the most interesting thing to do?), but it's what I
 look for most in online discussions at the moment. 
@@ -184,4 +184,4 @@ to be. Or they change the way I think or approach the world.
 [^1]: (1) [Some guy](https://news.ycombinator.com/item?id=4693920)
 
 [^2]: (2) These are based on [another
-list](http://www.paulgraham.com/disagree.html) buy that guy
+list](http://www.paulgraham.com/disagree.html) by that guy
