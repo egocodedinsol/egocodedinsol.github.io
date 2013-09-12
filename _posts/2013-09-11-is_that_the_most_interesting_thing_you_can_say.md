@@ -6,7 +6,7 @@ published: true
 
 I used to have the title taped above my desk in my lab office, to remind me that
 not everything I think is interesting to others, and not everything that's true
-matters in every discussion[^1]. Of course, interestingness is not the most
+matters in every discussion[^1](1). Of course, interestingness is not the most
 appropriate criterion for a comment in every situation (the hurricane is coming,
 but people, what would be the most interesting thing to do?), but it's what I
 look for most in online discussions at the moment. 
@@ -36,7 +36,7 @@ the comments are repetitive at best, and karma-whoring at worst.
 
 However, if some web communities will continue to grow, it might be useful to
 have some guidelines. As a heuristic, I've developed a system I try to keep in
-mind when making comments, to rank or categorize them[^2]. I tend to think of
+mind when making comments, to rank or categorize them[^2](2). I tend to think of
 these comments as if I were making them at a scientific conference, so I'll
 place them in that context. Sometimes taking what happens in an internet
 community and asking how it would look in person offers an emotionally salient
