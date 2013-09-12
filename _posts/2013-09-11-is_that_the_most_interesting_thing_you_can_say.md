@@ -180,7 +180,6 @@ The most interesting comments illustrate how the major perspective put forth by 
 other comment will alter the way the world is organized, or how we understand it
 to be. Or they change the way I think or approach the world. 
 
-
 [^1]: (1) [Some guy](https://news.ycombinator.com/item?id=4693920)
 
 [^2]: (2) These are based on [another
