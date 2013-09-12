@@ -1,8 +1,6 @@
 ---
 layout: nofigpost 
 title: Is That the Most Interesting Thing You Can Say? 
-categories: [ ]
-reviewers: [ ]
 published: true
 ---
 
@@ -184,5 +182,6 @@ to be. Or they change the way I think or approach the world.
 
 
 [^1] (1) [Some guy](https://news.ycombinator.com/item?id=4693920)
+
 [^2] (2) These are based on [another
 list](http://www.paulgraham.com/disagree.html) buy that guy
