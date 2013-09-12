@@ -4,8 +4,8 @@
   margin: 0 auto;
   margin-top: 20%;
   margin-bottom: 20%;
-  font-family: Helvetica;
-  opacity: 0.9;
+  font-family: Georgia;
+  /* opacity: 0.9; */
 }
 .footnotes hr {
   border: 0;
@@ -22,4 +22,7 @@
   font-size: 1.5em;
   opacity: 0.5;
   margin-bottom: -0.7em;
+}
+#content_section h1 {
+  text-align: left;
 }
