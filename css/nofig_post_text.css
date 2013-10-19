@@ -1,12 +1,16 @@
 #content_section {
   width: 95%;
-  max-width: 23em;
   margin: 0 auto;
   margin-top: 10%;
   margin-bottom: 20%;
   font-family: Baskerville;
   opacity: 0.9;
   float: none;
+}
+@media screen and (min-width:480px) {
+  #content_section {
+    max-width: 23em;
+  }
 }
 .footnotes hr {
   border: 0;
