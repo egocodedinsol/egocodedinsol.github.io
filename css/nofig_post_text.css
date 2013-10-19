@@ -6,6 +6,7 @@
   margin-bottom: 20%;
   font-family: Baskerville;
   opacity: 0.9;
+  float: none;
 }
 .footnotes hr {
   border: 0;
