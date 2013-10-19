@@ -1,11 +1,14 @@
+body {
+  width: 95%;
+}
 #content_section {
   width: 95%;
   max-width: 23em;
   margin: 0 auto;
   margin-top: 20%;
   margin-bottom: 20%;
-  font-family: Georgia;
-  /* opacity: 0.9; */
+  font-family: Baskerville;
+  opacity: 0.9;
 }
 .footnotes hr {
   border: 0;
