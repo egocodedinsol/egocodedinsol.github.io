@@ -76,10 +76,10 @@ span#lambda {
 #about_section {
   width:100%;
   font-size: 1.2em; 
-  left: 0px;
-  position: relative;
+  /*left: 0px;*/
+  /*position: relative;*/
   /*float: left; */
-  margin-bottom: 0px;
+  margin-bottom: 0em;
   margin-top: -1.5em;
   font-weight: lighter !important;
 } 

@@ -10,7 +10,6 @@ body {
   line-height: 1.4;
   background: rgb(255,255,255);
   color: rgb(21,21,29); 
-  width: 95%;
 }
 @-moz-document url-prefix() {
   body {
