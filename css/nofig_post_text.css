@@ -1,6 +1,6 @@
 #content_section {
   width: 95%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   margin-top: 10%;
   margin-bottom: 20%;
   font-family: Baskerville;
@@ -10,6 +10,13 @@
 @media screen and (min-width:5in) {
   #content_section {
     max-width: 23em;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-family: Baskerville;
+    opacity: 0.9;
+    float: none;
   }
 }
 .footnotes hr {
