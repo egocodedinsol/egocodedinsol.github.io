@@ -4,7 +4,6 @@
   font-family: Baskerville;
   opacity: 0.9;
   float: none;
-  background: blue;
 }
 @media screen and (min-width:400px) {
   #content_section {
@@ -16,7 +15,6 @@
     font-family: Baskerville;
     opacity: 0.9;
     float: none;
-    background: green;
   }
 }
 .footnotes hr {
