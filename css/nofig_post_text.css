@@ -4,6 +4,7 @@
   font-family: Baskerville;
   opacity: 0.9;
   float: none;
+  background: blue;
 }
 @media screen and (min-width:5in) {
   #content_section {
