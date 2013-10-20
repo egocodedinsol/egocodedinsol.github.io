@@ -6,7 +6,7 @@
   float: none;
   background: blue;
 }
-@media screen and (min-width:5in) {
+@media screen and (min-width:400px) {
   #content_section {
     max-width: 23em;
     width: 95%;
@@ -16,6 +16,7 @@
     font-family: Baskerville;
     opacity: 0.9;
     float: none;
+    background: green;
   }
 }
 .footnotes hr {
